@@ -2,9 +2,9 @@ import React from 'react'
 import './User.scss';
 
 interface UserParams {
-    name: any;
-    city: any;
-    company: any;
+    name: string;
+    city: string;
+    company: string;
     clickMoreInfo: any;
     users: any;
 }

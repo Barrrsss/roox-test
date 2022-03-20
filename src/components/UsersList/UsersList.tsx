@@ -11,7 +11,7 @@ interface UserParams {
     clickMoreInfo: any;
     sortByName: any;
     sortByCity: any;
-    isLoading: any;
+    isLoading: boolean;
 }
 
 const UsersList = ({clickMoreInfo, sortByName, sortByCity, isLoading}: UserParams) => {

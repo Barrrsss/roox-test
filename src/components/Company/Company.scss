@@ -26,8 +26,8 @@
   }
   &__button{
     @include pointer;
-    width: 86px;
-    height: 24px;
+    width: 116px;
+    height: 27px;
 
     background: #4B51EF;
     border: none;
@@ -38,6 +38,8 @@
     color: #FFFFFF;
     font-style: normal;
     &_send {
+      width: 85px;
+      height: 24px;
       background: #52CF4F;
       margin-left: auto;
       margin-right: 0;
@@ -67,6 +69,8 @@
       margin: 10px 0 3px 0;
     }
     &_input {
+      width: 211px;
+      height: 22px;
       background: #FFFFFF;
       border: 1px solid #D8D8D8;
       box-sizing: border-box;

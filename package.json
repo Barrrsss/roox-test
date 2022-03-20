@@ -1,5 +1,6 @@
 {
     "name": "roox-test",
+    "homepage": "https://barrrsss.github.io/roox-test",
     "version": "1.0.7",
     "keywords": [
         "react",
@@ -10,7 +11,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git@github.com:glook/webpack-typescript-react.git"
+        "url": "git@github.com/Barrrsss/roox-test.git"
     },
     "license": "MIT",
     "main": "webpack.config.babel.js",
@@ -19,6 +20,8 @@
         "profile": "cross-env NODE_ENV=production webpack --profile --json --config webpack.config.babel.js > ./dist/profile.json && webpack-bundle-analyzer ./dist/profile.json",
         "start": "cross-env WEBPACK_IS_DEV_SERVER=true NODE_ENV=development webpack serve --config webpack.config.babel.js",
         "release": "npm version patch",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "update-hooks": "npx simple-git-hooks",
         "prerelease": "npm run update-hooks",
         "postinstall": "npm run update-hooks"
@@ -75,6 +78,7 @@
         "eslint-plugin-react-hooks": "~4.3.0",
         "eslint-webpack-plugin": "~3.1.1",
         "fork-ts-checker-webpack-plugin": "~6.5.0",
+        "gh-pages": "^3.2.3",
         "html-loader": "~3.1.0",
         "html-webpack-plugin": "~5.5.0",
         "import-sort-style-module-and-prefix": "~0.1.3",

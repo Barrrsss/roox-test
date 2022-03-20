@@ -4,7 +4,7 @@ import {Route, Routes, useNavigate} from 'react-router';
 import {CurrentUserContext} from '@src/contexts/CurrentUserContext';
 import mainApi from '../../utils/MainApi';
 
-import {body} from './app.scss';
+import  './app.scss';
 
 import UsersList from '@components/UsersList/UsersList';
 import Company from '@components/Company/Company';
@@ -27,9 +27,7 @@ export const App = (): JSX.Element => {
             });
 
     }, []);
-    useEffect(()=> {
-        console.log(currentUsers);
-    },[currentUsers])
+
     const [sortFromId, setSortFromId] = React.useState(true);
 
     const sortByName = () => {
@@ -51,7 +49,7 @@ export const App = (): JSX.Element => {
     return (
 
         <CurrentUserContext.Provider value={currentUsers}>
-            <div className={body}>
+            <div className='body'>
                 <Routes>
                     <Route path='/'>
                         <Route path='/' element={<UsersList clickMoreInfo={clickMoreInfo} sortByName={sortByName}
