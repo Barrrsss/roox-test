@@ -1,0 +1,92 @@
+@import "./src/styles/mixin";
+
+.profile {
+  position: relative;
+  min-height: 100vh;
+  @include flexrow;
+  &__container {
+    width: 438px;
+    position: relative;
+    margin: 13px 0 11px 36px;
+    @include flexcolumn;
+    &_title {
+      width: 100%;
+      height: 30px;
+      @include flexcenter;
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin: 0;
+  }
+  &__button{
+    @include pointer;
+    width: 86px;
+    height: 24px;
+
+    background: #4B51EF;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    font-style: normal;
+    &_send {
+      background: #52CF4F;
+      margin-left: auto;
+      margin-right: 0;
+      &:disabled {
+        background: #AFAFAF;
+      }
+    }
+    }
+  &__form {
+    width: 438px;
+    border: 1px solid #F3F3F3;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 10px 0 10px 0;
+    padding: 20px 0 20px 0;
+    &_container {
+      @include flexcolumn;
+      align-items: flex-start;
+      margin-left: 12px;
+    }
+    &_label {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      color: #000000;
+      margin: 10px 0 3px 0;
+    }
+    &_input {
+      background: #FFFFFF;
+      border: 1px solid #D8D8D8;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      &:invalid {
+        border: 1px solid #D91313;
+      }
+      &_comment {
+        width: 420px;
+        height: 55px;
+        padding-top: -10px;
+        resize: none;
+        overflow: hidden;
+      }
+    }
+    :disabled {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}

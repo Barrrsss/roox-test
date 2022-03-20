@@ -1,0 +1,113 @@
+@mixin flexcenter () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexcolumn () {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin flexcentercolumn () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin inflexcolumncenter () {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flexrowsbcenter () {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin inflexcolumnsb () {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@mixin inflexrownsbcenter () {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flexrowcenter () {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@mixin flexrow () {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flexcentersb () {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin m0a () {
+  margin: 0 auto;
+}
+@mixin tahoma () {
+  font-family: 'Tahoma', Arial, sans-serif;
+}
+@mixin tahomanormal () {
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin pointer () {
+  cursor: pointer;
+}
+@mixin f10 () {
+  font-size: 10px;
+  line-height: 12px;
+}
+@mixin f11 () {
+  font-size: 11px;
+  line-height: 13px;
+}
+@mixin f12 () {
+  font-size: 12px;
+  line-height: 14px;
+}
+@mixin f13 () {
+  font-size: 13px;
+  line-height: 16px;
+}
+@mixin f14 () {
+  font-size: 14px;
+  line-height: 17px;
+}
+@mixin f16 () {
+  font-size: 16px;
+  line-height: 19px;
+}
+@mixin f18 () {
+  font-size: 18px;
+  line-height: 22px;
+}
+@mixin f24 () {
+  font-size: 24px;
+  line-height: 29px;
+}
+@mixin f29 () {
+  font-size: 29px;
+  line-height: 35px;
+}
+@mixin opac6 () {
+  opacity: 0.6;
+}
+@mixin opac2 () {
+  opacity: 0.2;
+}
+@mixin bgcentertransp () {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}

@@ -1,0 +1,45 @@
+@import "./src/styles/mixin";
+
+.user {
+  @include flexrow;
+  &-list {
+    list-style-type: none;
+    margin: 0 0 0 34px;
+    padding: 0;
+    &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      margin: 19px 0 15px 0;
+      color: #000000;
+    }
+  }
+}
+.button {
+  @include pointer;
+  width: 86px;
+  height: 24px;
+
+  background: #4B51EF;
+  border: none;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  font-style: normal;
+  margin: 10px 0 0 20px;
+  &__field {
+    width: 152px;
+    display: flex;
+    flex-direction: column;
+    background: #BDBDBD;
+  }
+  &__title {
+    margin: 35px 0 0 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
