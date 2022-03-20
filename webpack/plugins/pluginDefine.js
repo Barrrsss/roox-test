@@ -1,12 +1,5 @@
 import {DefinePlugin} from 'webpack';
 
-/**
- * Created by: Andrey Polyakov (andrey@polyakov.im)
- * @example
- * const config = {
- *     isProd: true
- * }
- */
 import {isDev, isDevServer, isProd, mode} from '../utils/env';
 
 const config = {

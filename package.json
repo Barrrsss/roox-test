@@ -21,7 +21,7 @@
         "start": "cross-env WEBPACK_IS_DEV_SERVER=true NODE_ENV=development webpack serve --config webpack.config.babel.js",
         "release": "npm version patch",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "deploy": "gh-pages -d dist",
         "update-hooks": "npx simple-git-hooks",
         "prerelease": "npm run update-hooks",
         "postinstall": "npm run update-hooks"
